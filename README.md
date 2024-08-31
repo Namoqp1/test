@@ -15,7 +15,7 @@ spawn(function()
             if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") then
                   repeat 
                       task.wait()
-                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,35,0)
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,-35,0)
                   until not _G.Dun or v.Humanoid.Health <= 0
                end
             end
